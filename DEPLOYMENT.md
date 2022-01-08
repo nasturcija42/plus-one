@@ -10,10 +10,16 @@
 7. В разделе **TIME & DATE** установить актуальный часовой пояс, **Network Time** оставить без изменений.
 8. Нажать **Begin installation**, по завершении установки нажать **Reboot**.
 9. После перезагрузки зайти под пользователем root.
-10. Отключить(и убрать из автозагрузки) firewalld командой systemctl stop(disable) firewalld.service
+10. Отключить и убрать из автозагрузки firewalld следующими командами:
+    - systemctl stop firewalld.service
+    - systemctl disable firewalld.service
 11. Установить php и зависимости командой dnf install -y php
 12. Установить nginx и зависимости командой dnf install -y nginx
-13. Включить(и добавить в автозагрузку) php-fpm(и nginx) командами systemctl start(enable) php-fpm(nginx).
+13. Включить и добавить в автозагрузку  php-fpm и nginx следующими командами
+    - systemctl start php-fpm
+    - systemctl enable php-fpm
+    - systemctl start nginx
+    - systemctl enable nginx
 14. Создать папку /var/www/htdocs/ и выдать nginx права для неё командой **chown -R nginx:nginx /var/www/htdocs/**.
 15. Заменить конфигурационный файл **/etc/nginx/nginx.conf** аналогичным файлом в корне репозитория.
 16. В папку **/etc/nginx/conf.d/** добавить файл **task.local**
