@@ -13,8 +13,8 @@
 10. Отключить и убрать из автозагрузки firewalld следующими командами:
     - systemctl stop firewalld.service
     - systemctl disable firewalld.service
-11. Установить php и зависимости командой dnf install -y php
-12. Установить nginx и зависимости командой dnf install -y nginx
+11. Установить php командой **dnf install -y php**
+12. Установить nginx **командой dnf install -y nginx**
 13. Включить и добавить в автозагрузку  php-fpm и nginx следующими командами
     - systemctl start php-fpm
     - systemctl enable php-fpm
