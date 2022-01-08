@@ -8,7 +8,7 @@
 4. Число хранится в файле number.txt и увеличивается каждую минуту на единицу (использовать crontab, php)
 5. Для данного задания необходимо написать отчет: с пошаговой инструкцией как развернуть данные сервисы. Отчет написать в файле DEPLOYMENT.md
 ## Рабочее окружение для запуска.
-1. CentOS 8(доступен по ссылке http://mirror.tversu.ru/centos/8.5.2111/isos/x86_64/CentOS-8.5.2111-x86_64-boot.iso либо https://drive.google.com/file/d/1NGsdm2oUafIAOa_pKQd5pisa9m8qhOgp/view?usp=sharing
+1. CentOS 8(доступен для скачивания по ссылке http://mirror.tversu.ru/centos/8.5.2111/isos/x86_64/CentOS-8.5.2111-x86_64-boot.iso либо https://drive.google.com/file/d/1NGsdm2oUafIAOa_pKQd5pisa9m8qhOgp/view?usp=sharing
 2. Наличие доступа в интернет.
 3. веб-сервер nginx 1.14 или выше
 4. php v7.2 или выше
